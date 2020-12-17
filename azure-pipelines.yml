@@ -16,12 +16,10 @@ steps:
     azureResourceManagerConnection: 'AzureRmPipeline-conn'
     subscriptionId: 'fa9a0212-1823-4bd3-9c2e-68bf3a16e9b5'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'brd1'
+    resourceGroupName: 'new'
     location: 'East US'
     templateLocation: 'Linked artifact'
     csmFile: 'CreateWebApp/azuredeploy.json'
-    overrideParameters: '-projectName rdx -linkedTemplateUri https://raw.githubusercontent.com/rujhaan123/AzureRmPipelinerepo/master/CreateWebApp/linkedStorageAccount.json'
+    overrideParameters: '-projectName AzureRmPipelinerepo -linkedTemplateUri https://raw.githubusercontent.com/rujhaan123/AzureRmPipelinerepo/master/CreateWebApp/linkedStorageAccount.json'
     deploymentMode: 'Incremental'
-    deploymentName: 'DeployPipelineTemplate'
-    addSpnToEnvironment: true
 
